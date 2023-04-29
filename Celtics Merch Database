@@ -1,0 +1,15 @@
+--Create an online merch store database
+
+CREATE TABLE Merch (ID integer primary key, item text, price integer, QTY integer);
+
+INSERT into Merch VALUES (1, "Brown Jersey", 79.99, 5);
+INSERT into Merch VALUES (2, "Tatum Jersey", 79.99, 5);
+INSERT into Merch VALUES (3, "Celtics Keychain", 6.99, 10);
+INSERT into Merch VALUES (4, "Polo Shirts", 39.99, 2);
+INSERT into Merch VALUES (5, "Autograph pictures", 199.99, 1);
+
+--display the datbase by merch price
+SELECT * FROM Merch ORDER BY price asc;
+
+--display the database by only items $50 or more.
+SELECT * FROM Merch WHERE price >= 50;
